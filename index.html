@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ness Listing - buy the running bussinesses</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./css/output.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="absolute z-10 left-0 right-0 text-white">
+    <div class="h-48 w-36 bg-amber-500/80 absolute right-14 top-10 rounded-lg justify-center hidden" id="hamMenu">
+      <ul class="flex flex-col items-center justify-center gap-3">
+        <li class="border-b-2 py-2"><a href="#" class="hover:text-gray-50">Sign In</a></li>
+        <li class="border-b-2 py-2"><a href="#" class="hover:text-gray-50">Sign Up</a></li>
+        <li class="border-b-2 py-2"><a href="#" class="hover:text-gray-50">Add to Listing</a></li>
+      </ul>
+    </div>
+    <div class="w-11/12
+     flex justify-between m-auto py-5 items-center">
+      <div class="inline md:hidden order-2">
+        <button class="hamburger" id="hamburger"><i class="material-icons align-middle">menu</i></button>
+      </div>
+      <div>
+        <a href="#" class="text-xl font-semibold">Ness Listing</a>
+      </div>
+      <div>
+        <button class="bg-transparent border py-1 px-2 sm:py-2 sm:px-4 border-amber-500 text-amber-500 rounded-lg hover:text-white hover:bg-amber-500 md:inline hidden">Add Listing</button>
+      </div>
+      <div class="space-x-2 sm:space-x-4 md:inline hidden">
+        <button class="text-l sm:text-xl">Sign In</button>
+        <button class="text-l sm:text-xl">Sign Up</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="relative h-screen">
+    <img src="./assets/images/hero/hero_4.jpg" alt="" class="h-full w-full object-cover">
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="absolute inset-0 h-full w-full">
+      <div class="flex h-full w-full items-center justify-center">
+        <div class="flex gap-5 flex-col">
+          <div class="text-center text-white">
+            <p class="text-3xl w-9/12 mx-auto sm:w-full sm:text-4xl mb-4 capitalize">Discover places that people love</p>
+            <p class="text-md">We will help you to find best places in the world.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-5">
+            <input type="text" class="h-full w-7/12 mx-auto py-3 px-4 rounded-md focus:outline-none text-gray-600 bg-white" placeholder="Location">
+            <input type="text" class="h-full w-7/12 mx-auto py-3 px-4 rounded-md focus:outline-none text-gray-600 bg-white" placeholder="I'm looking for...">
+            <button class="bg-amber-500 text-white py-2.5 px-6 rounded-md transition-all gap-1 hover:bg-amber-600 hover:text-gray-50 w-4/12 mx-auto">
+            <i class="material-icons align-middle">search</i>
+              Search
+            </button>
+          </div>
+          <ul class="flex flex-wrap items-center text-white justify-center sm:justify-center gap-6">
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">restaurant</i>
+              <span class="text-sm">Restaurant</span>
+            </a></li>
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">school</i>
+              <span class="text-sm">Schools</span>
+            </a></li>
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">local_hospital</i>
+              <span class="text-sm">Hospitals</span>
+            </a></li>
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">fitness_center</i>
+              <span class="text-sm">Gym</span>
+            </a></li>
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">local_cafe</i>
+              <span class="text-sm">Cafe</span>
+            </a></li>
+            <li><a href="#" class="flex items-center gap-2 hover:text-amber-500">
+              <i class="material-icons hidden sm:inline">shopping_cart</i>
+              <span class="text-sm">Shopping</span>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Main -->
+  <main>
+    <!-- Popular Places -->
+    <div class="bg-gray-50 py-32">
+      <div class="w-8/12 sm:w-11/12 mx-auto 2xl:w-9/12">
+        <div class="text-center mb-12">
+          <p class="text-gray-600 text-4xl mb-4">Popular Places</p>
+          <p class="text-gray-600">Discover Most Searched Places</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10 lg:gap-5 md:gap-16 xl:gap-32 2xl:gap-10">
+          <!-- card no 1 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/20210221-KXCoffeeGym29.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+          <!-- card no 2 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/skynews-dentist-generic_5393494.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+          <!-- card no 3 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/download.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+          <!-- card no 4 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/81782419-mobile-phone-repair-at-service-center-smartphone-dissasembling-and-diagnostic-repairman-workplace-to.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+          <!-- card no 5 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/dental 4.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+          <!-- card no 6 -->
+          <div class="bg-white rounded-md shadow max-width-xl overflow-hidden">
+            <img src="./assets/images/dental 5.jpg" alt="" class="h-48 w-full">
+            <div class="space-y-2 py-4 px-6">
+              <div class="flex items-center">
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star</i>
+                <i class="text-amber-500 material-icons">star_half</i>
+                <span class="text-gray-600 text-sm ml-4">294 Reviews</span>
+              </div>
+              <div class="text-l ml-0.5">
+                Dr. Someone Clinic
+              </div>
+              <div class="text-sm flex items-center -ml-0.5">
+                <i class="material-icons">location_on</i>
+                <span class="ml-2">Somewhere, in California</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">clinic</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">hospital</span>
+                <span class="rounded-lg bg-amber-100 text-amber-600 text-sm px-2 py-1">$$</span>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center py-28">
+          <button class="bg-gray-200 text-gray-600 rounded-lg text-xl shadows-xl py-3 px-6 hover:bg-gray-300 hover:shadow-xl">🚀 Discover More</button>
+        </div>
+      </div>
+    </div>
+    <!-- Discover by Categories -->
+    <div class="bg-sky-50">
+      <div class="w-10/12 mx-auto py-32">
+        <div class="text-center mb-12">
+          <p class="text-gray-600 text-4xl mb-4 font-bold">Discover by Categories</p>
+          <p class="text-gray-600">Discover Places by Categories</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-16">
+          <!-- first card -->
+          <div class="flex flex-col gap-y-4 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/automotive.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Automotive</span>
+          </div>
+          <!-- second card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/health.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Health & Medical</span>
+          </div>
+          <!-- third card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/hotel.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Hotel & Travel</span>
+          </div>
+          <!-- fourth card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/home.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Home Services</span>
+          </div>
+          <!-- fifth card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/shopping.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Shopping</span>
+          </div>
+          <!-- sixth card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/school.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Education</span>
+          </div>
+          <!-- seventh card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/566024_coffee_cafe_cup_drink_espresso_icon.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Coffee & Tea</span>
+          </div>
+          <!-- eighth card -->
+          <div class="flex flex-col gap-2 justify-center items-center py-6 bg-white rounded-md">
+            <img src="./assets/images/icons/531911_camera_device_entertainment_film_media_icon.png" alt="" class="w-28">
+            <span class="text-gray-500 font-bold">Entertainment</span>
+          </div>
+        </div>
+        <div class="flex justify-center mt-28">
+          <button class="bg-gray-200 text-gray-600 rounded-lg text-xl shadows-xl py-3 px-6 hover:bg-gray-300 hover:shadow-xl">🚀 More Categories</button>
+        </div>
+    </div>
+    <!-- Discover by Collections -->
+    <div class="bg-gray-100">
+      <div class="w-10/12 mx-auto py-32">
+        <div class="text-center mb-12">
+          <p class="text-gray-600 text-4xl mb-4 font-bold">Collections</p>
+          <p class="text-gray-600">Discover List of Top Places By Collection</p>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10">
+          <!-- first card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (4).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Trending This Week</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (6).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Traditional Restaurants</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- third card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/dental 1.jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Newly Opened</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- fourth card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (1).jpeg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Luxury Houses</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- fifth card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (2).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Cheap in Town</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- sixth card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (3).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Newly Opened</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- seventh card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (7).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Newly Opened</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+          <!-- eight card -->
+          <div class="relative rounded-md h-64 w-56 overflow-hidden bg-red-600 hover:shadow-xl">
+            <img src="./assets/images/res-pic (5).jpg" alt="" class="h-full w-full object-cover">
+            <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0"></div>
+            <div class="absolute bottom-4 left-4 text-gray-200">
+              <p class="font-semibold">Newly Opened</p>
+              <p class="text-sm">21 Places</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-28">
+          <button class="bg-gray-200 text-gray-600 rounded-lg text-xl shadows-xl py-3 px-6 hover:bg-gray-300 hover:shadow-xl">🚀 More Collections</button>
+        </div>
+      </div>
+    </div>
+    <!-- Team Section -->
+    <div class="bg-gray-50 relative">
+      <div class="absolute team inset-0 w-1/2 opacity-30"></div>
+      <div class="bg-gradient-to-l from-gray-50 via-transparent to-transparent w-1/2 absolute inset-0"></div>
+      <div class="w-9/12 mx-auto flex flex-col gap-20 py-32 relative lg:flex-row">
+        <div class="w-full flex gap-5">
+          <div class="flex flex-col gap-10">
+            <div class="relative h-56 w-36 sm:h-64 sm:w-52 rounded-md overflow-hidden hover:shadow-xl">
+              <img src="./assets/images/team/smile.jpeg" alt="" class="h-full w-full object-cover">
+              <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0">
+              </div>
+              <div class="absolute bottom-4 left-4 text-gray-50">
+                <p class="font-semibold text-l">Fate Foo</p>
+                <p class="text-sm">CEO</p>
+              </div>
+            </div>
+            <div class="relative h-56 w-36 sm:h-64 sm:w-52 rounded-md overflow-hidden hover:shadow-xl">
+              <img src="./assets/images/team/smile_4.jpg" alt="" class="h-full w-full object-cover">
+              <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0">
+              </div>
+              <div class="absolute bottom-4 left-4 text-gray-50">
+                <p class="font-semibold text-l">Fate Foo</p>
+                <p class="text-sm">CEO</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-10 mt-20">
+            <div class="relative h-56 w-36 sm:h-64 sm:w-52 rounded-md overflow-hidden hover:shadow-xl">
+              <img src="./assets/images/team/smile_6.jpg" alt="" class="h-full w-full object-cover">
+              <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0">
+              </div>
+              <div class="absolute bottom-4 left-4 text-gray-50">
+                <p class="font-semibold text-l">Fate Foo</p>
+                <p class="text-sm">CEO</p>
+              </div>
+            </div>
+            <div class="relative h-56 w-36 sm:h-64 sm:w-52 rounded-md overflow-hidden hover:shadow-xl">
+              <img src="./assets/images/team/smile_man_1.jpg" alt="" class="h-full w-full object-cover">
+              <div class="bg-gradient-to-t from-black via-transparent to-transparent absolute inset-0">
+              </div>
+              <div class="absolute bottom-4 left-4 text-gray-50">
+                <p class="font-semibold text-l">Fate Foo</p>
+                <p class="text-sm">CEO</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex items-center">
+          <div class="flex flex-col">
+            <p class="text-indigo-500 uppercase font-bold text-sm">our support heroes</p>
+            <h2 class="text-4xl mt-2 font-semibold">Meet The Team</h2>
+            <p class="text-gray-400 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam accusamus minus itaque asperiores at blanditiis perferendis cumque ipsam porro corrupti quibusdam laborum, sequi repellendus quasi, dolorem quam. Quibusdam, ad culpa.</p>
+            <div class="mt-10 flex lg:flex-col xl:flex-row lg:items-start gap-5 items-center xl:items-center">
+              <button class="text-l font-semibold flex items-center gap-1 rounded-full text-gray-500 border-2 border-gray-500 py-3 px-4 hover:bg-transparent hover:text-gray-800 hover:border-gray-800">
+                <i class="material-icons align-middle">groups</i>
+                <span>Meet Us</span>
+              </button>
+              <button class="text-l font-semibold flex items-center gap-1 rounded-full bg-indigo-500 text-white border-2 border-white py-3 px-4 hover:bg-transparent hover:text-gray-800 hover:border-gray-800">
+                <i class="material-icons align-middle">lightbulb</i>
+                <span>Learn More</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial Section -->
+    <div class="bg-white relative">
+      <div class="hidden sm:inline bg-gray-50 w-2/3 absolute top-16 right-0 bottom-0 rounded-t-xl"></div>
+      <div class="w-8/12 mx-auto py-32">
+        <div class="mb-20 relative z-20">
+          <h1 class="text-4xl font-bold font-mono w-full lg:w-6/12 text-gray-700">What Our Customers Are Saying</h1>
+        </div>
+        <div class="flex flex-wrap flex-col gap-32 xl:flex-row xl:flex-nowrap xl:gap-0">
+          <div class="w-full">
+            <div class="h-full w-5/6 relative z-10 lg:w-3/6">
+              <img src="./assets/images/testimonials/testimonial-2.jpg" alt="" class="h-full w-full object-cover">
+              <div class="absolute -top-4 -right-4 bg-indigo-500 py-2 px-2.5 rounded-full">
+                <i class="material-icons align-middle text-white text-4xl">format_quote</i>
+              </div>
+              <div class="absolute -top-24 -left-24 h-48 w-36 testimonial -z-10 opacity-40">
+              </div>
+              <div class="absolute -bottom-24 -right-24 h-48 w-36 testimonial -z-10 opacity-40">
+              </div>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <button class="bg-amber-400 rounded-full text-white py-2 px-2.5 flex justify-center items-center">
+                <i class="material-icons align-middle text-sm font-semibold">arrow_back_ios</i>
+              </button>
+              <button class="bg-amber-400 rounded-full text-white py-2 px-2.5 flex justify-center items-center">
+                <i class="material-icons align-middle text-sm font-semibold">arrow_forward_ios</i>
+              </button>
+            </div>
+          </div>
+          <div class="w-full z-10 space-y-8 lg:w-1/2">
+            <div class="space-y-3">
+              <p class="text-gray-800 text-xl font-semibold">Help Us Improve Our Productivity</p>
+              <p class="text-gray-500 text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam dolorum doloremque quis praesentium exercitationem in ex nostrum. Architecto aspernatur nesciunt commodi molestias reprehenderit.</p>
+            </div>
+            <div class="space-y-0.5">
+              <p class="text-gray-800 text-xl font-semibold">John Doe</p>
+              <p class="text-gray-500 text-md">Lead Marketing Manager</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact us Section -->
+    <div class="bg-sky-50 relative hidden xl:inline">
+      <div class="w-8/12 py-32 mx-auto">
+        <div class="relative rounded-lg overflow-hidden">
+          <img src="./assets/images/contact-us/photo-1524069290683-0457abfe42c3.jpg" alt="" class="h-full w-full object-cover">
+          <div class="bg-black/70 absolute inset-0"></div>
+          <div class="w-full h-full flex gap-5 absolute inset-0">
+            <div class="basis-3/5 py-10 text-gray-50 relative">
+              <div class="absolute bottom-32 left-12">
+                <h2 class="text-4xl mb-6">Find Us</h2>
+                <div class="flex gap-5">
+                  <div class="border-r-2">
+                    <p class="font-semibold text-2xl mb-1">New York</p>
+                    <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                  </div>
+                  <div class="border-r-2">
+                    <p class="font-semibold text-2xl mb-1">California</p>
+                    <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                  </div>
+                  <div>
+                    <p class="font-semibold text-2xl mb-1">Delhi</p>
+                    <p class="text-sm">Derrick Street Boston, MA 02130 USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-7/12 relative">
+              <div class="bg-white w-10/12 absolute 2xl:top-20 2xl:bottom-20 2xl:right-5 rounded-md p-5 xl:bottom-8 xl:top-8 xl:right-4">
+                <div class="flex flex-col gap-4 w-full">
+                  <p class="text-4xl font-bold text-gray-800">Get In Touch</p>
+                  <p class="text-sm w-2/3 ml-0.5 text-gray-600 font-semibold">Need help or have some feedback for us? Fill out this form below to contact our team.</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                  <div class="flex gap-10 mt-6">
+                    <div>
+                      <label for="fName" class="text-gray-500 font-semibold block ml-0.5">First Name</label>
+                      <input type="text" placeholder="Ammar" class="border border-gray-300 px-4 py-2 rounded-md w-full text-sm mt-1">
+                    </div>
+                    <div>
+                      <label for="lName" class="text-gray-500 font-semibold block ml-0.5">Last Name</label>
+                      <input type="text" placeholder="Butt" class="border border-gray-300 px-4 py-2 rounded-lg w-full text-sm mt-1">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="email" class="text-gray-800 font-semibold block ml-0.5">Email</label>
+                    <input type="email" placeholder="ahmarammarbutt@gmail.com" class="border border-gray-300 px-4 py-2 rounded-md w-full text-sm mt-1">
+                  </div>
+                  <div class="xl:hidden 2xl:inline">
+                    <label for="comment" class="text-gray-800 font-semibold block ml-0.5">Message</label>
+                    <textarea cols="30" rows="3" placeholder="Good Job! I only have this question." class="border border-gray-300 px-4 py-2 rounded-md w-full text-sm mt-1"></textarea>
+                  </div>
+                  <div class="xl:mt-6 2xl:mt-0">
+                    <button class="flex items-center gap-2 bg-indigo-600 text-gray-50 py-1.5 px-3 rounded-lg font-semibold hover:bg-indigo-700">
+                      <i class="material-icons align-middle">airport_shuttle</i>
+                      <span>Get in Touch</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Features Section  -->
+    <div class="bg-gray-50">
+      <div class="w-8/12 mx-auto py-32">
+        <div class="text-center">
+          <h2 class="text-gray-600 text-4xl font-semibold">Our Valuable Features</h2>
+          <p class="text-gray-400 font-semibold mt-3">Actuals at conscius supporiam ac. Vocem si longo mo co veris entis.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-12 gap-12 xl:grid-cols-3">
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+          <div class=" group flex flex-col gap-3 p-4 hover:bg-white hover:rounded-lg hover:shadow-md shadow-sm">
+            <button class="rounded-xl w-fit overflow-hidden shadow-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-indigo-500 bg-slate-100 p-2 group-hover:bg-black group-hover:text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+              </svg>
+            </button>
+            <p class="-mt-1 font-bold text-l text-gray-500 group-hover:text-gray-700">Unlimited Chat</p>
+            <p class="text-gray-400 font-semibold text-sm group-hover:text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam eaque aut sed consequuntur ut ipsa labore nobis ad ratione maxime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="bg-white w-8/12 lg:w-11/12 mx-auto py-12">
+      <div class="flex flex-wrap justify-center flex-col lg:flex-row gap-12 lg:gap-24">
+        <div class="space-y-2">
+          <p class="uppercase text-gray-500 text-sm font-bold">company</p>
+          <ul class="text-sm text-gray-500 font-semibold">
+            <li>Who We Are</li>
+            <li>Contact Us</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <p class="uppercase text-gray-500 text-sm font-bold">company</p>
+          <ul class="text-sm text-gray-500 font-semibold">
+            <li>Who We Are</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <p class="uppercase text-gray-500 text-sm font-bold">company</p>
+          <ul class="text-sm text-gray-500 font-semibold">
+            <li>Who We Are</li>
+            <li>Contact Us</li>
+            <li>Support</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+          </ul>
+        </div>
+        <div class="space-y-2">
+          <p class="text-sm text-gray-500 font-bold uppercase">Follow us</p>
+          <ul class="flex gap-2">
+            <li class="h-8 w-8 cursor-pointer"><img src="./assets/images/icons/fb.png" alt="" class="h-full w-full"></li>
+            <li class="h-8 w-8 cursor-pointer"><img src="./assets/images/icons/ig.png" alt="" class="h-full w-full"></li>
+            <li class="h-8 w-8 cursor-pointer"><img src="./assets/images/icons/pt.png" alt="" class="h-full w-full"></li>
+            <li class="h-8 w-8 cursor-pointer"><img src="./assets/images/icons/tg.png" alt="" class="h-full w-full"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- helper component -->
+  <div class="fixed bottom-0 bg-green-600 text-white px-2 font-semibold shadow-2xl">
+    <div class="sm:hidden">default</div>
+    <div class="hidden sm:inline md:hidden">sm</div>
+    <div class="hidden md:inline lg:hidden">md</div>
+    <div class="hidden lg:inline xl:hidden">lg</div>
+    <div class="hidden xl:inline 2xl:hidden">xl</div>
+    <div class="hidden 2xl:inline">2xl</div>
+  </div>
+  <script>
+    // hamburger menu
+    const hamButton = document.getElementById("hamburger");
+    console.log(hamButton);
+    hamButton.addEventListener(("click"),(e) => {
+      let hamMenu = document.querySelector("#hamMenu");
+      const properties = hamMenu.getAttribute("class");
+      if(properties.includes("hidden")){
+        hamMenu.classList.remove("hidden");
+        hamMenu.classList.add("flex");
+      }
+      if(properties.includes("flex")){
+        hamMenu.classList.remove("flex");
+        hamMenu.classList.add("hidden");
+      }
+    })
+  </script>
+</body>
+</html>
